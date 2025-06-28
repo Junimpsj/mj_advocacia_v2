@@ -383,14 +383,31 @@ class NavigationManager {
     }
 
     scrollToElement(element) {
-        const headerHeight = this.header?.offsetHeight || 80;
-        const elementPosition = element.offsetTop - headerHeight;
-        
-        window.scrollTo({
-            top: elementPosition,
-            behavior: 'smooth'
-        });
-    }
+    const headerHeight = this.header?.offsetHeight || 80;
+    const targetY = element.offsetTop - headerHeight;
+    const startY = window.scrollY;
+    const distance = targetY - startY;
+    const duration = 800;
+    let startTime = null;
+
+    const easeInOutQuad = (t) => t < 0.5
+        ? 2 * t * t
+        : -1 + (4 - 2 * t) * t;
+
+    const animateScroll = (timestamp) => {
+        if (!startTime) startTime = timestamp;
+        const timeElapsed = timestamp - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        const easedProgress = easeInOutQuad(progress);
+        window.scrollTo(0, startY + distance * easedProgress);
+        if (progress < 1) {
+            requestAnimationFrame(animateScroll);
+        }
+    };
+
+    requestAnimationFrame(animateScroll);
+}
+
 
     setupSmoothScroll() {
         // Polyfill para navegadores que não suportam scroll behavior smooth
