@@ -287,12 +287,12 @@ window.MJDebug.triggerAnimation('.fade-in-up');
 
 ### 🏛️ Cliente
 - **M&J Advocacia**
-- **Amanda Machado** - Sócia Fundadora (Direito Familiar)
-- **Jéssica Juste** - Sócia Fundadora (Direito Previdenciário)
+- **Amanda Machado** - Sócia Fundadora
+- **Jéssica Juste** - Sócia Fundadora
 
 ### 💻 Desenvolvimento
-- **Laís Isabella Santos Sousa** - Desenvolvedor Frontend
-- **Paulo Celso dos Santos Júnior** - Desenvolvedor Frontend
+- **Laís Isabella Santos Sousa**
+- **Paulo Celso dos Santos Júnior**
 
 ### 📅 Timeline
 - **Projeto:** Janeiro 2025
