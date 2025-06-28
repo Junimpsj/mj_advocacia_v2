@@ -1,7 +1,6 @@
 /* ===================================
    M&J ADVOCACIA - LANDING PAGE CSS
    Arquivo: styles.css
-   Versão: 2.0 - Janeiro 2025
    ================================== */
 
 /* ===================================
@@ -1281,24 +1280,24 @@ body {
 /* ===================================
    UTILITÁRIOS DE DISPLAY
    ================================== */
-.hidden { display: none !important; }
+.hidden { display: none; }
 .visible { display: block !important; }
 .invisible { visibility: hidden !important; }
 
 /* Utilitários de espaçamento */
 .m-0 { margin: 0 !important; }
-.mt-auto { margin-top: auto !important; }
-.mb-auto { margin-bottom: auto !important; }
-.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+.mt-auto { margin-top: auto; }
+.mb-auto { margin-bottom: auto; }
+.mx-auto { margin-left: auto; margin-right: auto; }
 
 .p-0 { padding: 0 !important; }
 .pt-0 { padding-top: 0 !important; }
 .pb-0 { padding-bottom: 0 !important; }
 
 /* Utilitários de texto */
-.text-center { text-align: center !important; }
-.text-left { text-align: left !important; }
-.text-right { text-align: right !important; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
 
 .font-bold { font-weight: 700 !important; }
 .font-semibold { font-weight: 600 !important; }
@@ -1524,5 +1523,4 @@ img[loading="lazy"].loaded {
 /* ===================================
    FIM DO ARQUIVO CSS
    Desenvolvido para M&J Advocacia
-   Versão: 2.0 - Janeiro 2025
    ================================== */

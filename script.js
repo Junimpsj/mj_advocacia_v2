@@ -2,7 +2,6 @@
  * ===================================
  * M&J ADVOCACIA - LANDING PAGE JS
  * Arquivo: script.js
- * Versão: 2.0 - Janeiro 2025
  * ===================================
  */
 
@@ -16,9 +15,9 @@
 
 // Configuração do EmailJS (IMPORTANTE: Substitua pelas suas credenciais reais)
 const EMAIL_CONFIG = {
-    serviceId: 'YOUR_SERVICE_ID',     // Substitua pelo seu Service ID
-    templateId: 'YOUR_TEMPLATE_ID',   // Substitua pelo seu Template ID
-    publicKey: 'YOUR_PUBLIC_KEY'      // Substitua pela sua Public Key
+    serviceId: 'service_4m3tslj',     // Substitua pelo seu Service ID
+    templateId: 'template_u8zl45d',   // Substitua pelo seu Template ID
+    publicKey: 'OvjfNTNHJztycAtGC'      // Substitua pela sua Public Key
 };
 
 // Configurações de validação
@@ -75,9 +74,8 @@ const AppState = {
 const sanitizeInput = (input) => {
     if (typeof input !== 'string') return '';
     return input
-        .trim()
-        .replace(/[<>]/g, '') // Remove caracteres perigosos básicos
-        .substring(0, 1000); // Limita o tamanho
+        .replace(/[<>]/g, '') // Remove apenas os caracteres perigosos
+        .substring(0, 1000);
 };
 
 /**
@@ -741,12 +739,11 @@ class ContactFormManager {
 
     async sendEmail(data) {
         const templateParams = {
-            from_name: data.name,
-            from_email: data.email,
-            phone: data.phone || 'Não informado',
-            subject: data.subject,
-            message: data.message,
-            timestamp: data.timestamp
+            nome: data.name,
+            email: data.email,
+            telefone: data.phone,
+            mensagem: data.message,
+            data: data.timestamp
         };
 
         const response = await emailjs.send(
@@ -828,6 +825,7 @@ class ContactFormManager {
             element.classList.remove('show');
         });
     }
+
 }
 
 /**
@@ -1228,19 +1226,6 @@ class SecurityManager {
         });
     }
 
-    setupInputSanitization() {
-        // Sanitização automática em todos os inputs
-        document.addEventListener('input', (e) => {
-            if (e.target.matches('input[type="text"], input[type="email"], textarea')) {
-                const sanitized = sanitizeInput(e.target.value);
-                if (sanitized !== e.target.value) {
-                    e.target.value = sanitized;
-                    Logger.debug('Input sanitized:', e.target.name);
-                }
-            }
-        });
-    }
-
     setupRateLimiting() {
         // Rate limiting básico para ações sensíveis
         const actions = new Map();
@@ -1503,6 +1488,5 @@ if ('serviceWorker' in navigator) {
  * ===================================
  * FIM DO ARQUIVO
  * Desenvolvido para M&J Advocacia
- * Versão: 2.0 - Janeiro 2025
  * ===================================
  */

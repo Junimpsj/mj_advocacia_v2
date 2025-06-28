@@ -295,8 +295,8 @@ window.MJDebug.triggerAnimation('.fade-in-up');
 - **Paulo Celso dos Santos Júnior**
 
 ### 📅 Timeline
-- **Projeto:** Janeiro 2025
-- **Versão:** 2.0
+- **Inicio do Projeto:** Junho 2025
+- **Finalização do Projeto:** ...
 - **Status:** Em desenvolvimento 🔄
 
 ## 📄 Licença
