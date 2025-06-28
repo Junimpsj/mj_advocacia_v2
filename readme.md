@@ -2,7 +2,7 @@
 
 Uma landing page moderna e responsiva para o escritório de advocacia M&J Advocacia, especializado em Direito Familiar e Previdenciário, localizado em Macedônia - SP.
 
-![M&J Advocacia](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
+![M&J Advocacia](https://img.shields.io/badge/Status-InDevelopment-success?style=for-the-badge)
 ![Versão](https://img.shields.io/badge/Versão-2.0-blue?style=for-the-badge)
 ![Licença](https://img.shields.io/badge/Licença-MIT-green?style=for-the-badge)
 
@@ -297,40 +297,11 @@ window.MJDebug.triggerAnimation('.fade-in-up');
 ### 📅 Timeline
 - **Projeto:** Janeiro 2025
 - **Versão:** 2.0
-- **Status:** Concluído ✅
-
-## 📈 Changelog
-
-### v2.0 - Janeiro 2025
-- ✅ Sistema completo de animações com Intersection Observer
-- ✅ Integração funcional EmailJS
-- ✅ Google Maps embed
-- ✅ Sistema de notificações toast
-- ✅ Menu mobile com animações avançadas
-- ✅ Validação de formulário em tempo real
-- ✅ Performance otimizada
-- ✅ Acessibilidade completa
-
-### v1.0 - Janeiro 2025
-- ✅ Estrutura base da landing page
-- ✅ Design responsivo
-- ✅ Layout das seções principais
+- **Status:** Em desenvolvimento 🔄
 
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 📞 Suporte
-
-Para suporte técnico ou dúvidas sobre o projeto:
-
-- **Email:** [contato@mjadvocacia.com.br](mailto:contato@mjadvocacia.com.br)
-- **WhatsApp:** [(14) 99999-9999](https://wa.me/5514999999999)
-- **Endereço:** Rua Principal, 123 - Centro, Macedônia - SP
-
-## 🙏 Agradecimentos
-
-Agradecimentos especiais ao escritório M&J Advocacia pela confiança no projeto e pela oportunidade de criar uma solução digital que representa seus valores de humanização, ética e excelência no atendimento jurídico.
 
 ---
 
