@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="M&J Advocacia - Escritório especializado em Direito Familiar e Previdenciário. Amanda Machado e Jéssica Juste oferecem atendimento humanizado e expertise técnica.">
+    <meta name="keywords" content="advocacia, direito familiar, direito previdenciário, advogado, Macedônia SP">
+    <meta name="author" content="M&J Advocacia">
+    
+    <title>M&J Advocacia - Direito com Propósito, Advocacia com Coração</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/title-icon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#A67B5B',
+                        secondary: '#7FA987',
+                        accent: '#7FA987',
+                        background: '#F5F0E6',
+                        light: '#FAFAFA'
+                    },
+                    fontFamily: {
+                        'primary': ['Playfair Display', 'serif'],
+                        'secondary': ['Mulish', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-dynamic fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="logo">
+                <h1 class="text-2xl md:text-3xl font-bold text-primary">
+                    M&J <span class="text-accent">Advocacia</span>
+                </h1>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-8 navigation-menu">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#quem-somos" class="nav-link">Quem Somos</a></li>
+                <li><a href="#contatos" class="nav-link">Contatos</a></li>
+                <li><a href="#localizacao" class="nav-link">Localização</a></li>
+            </ul>
+            
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden mobile-menu-btn" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li><a href="#inicio" class="mobile-nav-link">Início</a></li>
+                <li><a href="#servicos" class="mobile-nav-link">Serviços</a></li>
+                <li><a href="#quem-somos" class="mobile-nav-link">Quem Somos</a></li>
+                <li><a href="#contatos" class="mobile-nav-link">Contatos</a></li>
+                <li><a href="#localizacao" class="mobile-nav-link">Localização</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="container mx-auto px-4 text-center text-white">
+                <h1 class="hero-title hero-animation">
+                    Direito com Propósito,<br>
+                    <span class="text-accent">Advocacia com Coração</span>
+                </h1>
+                <p class="hero-subtitle hero-animation">
+                    Especialistas em Direito Familiar e Previdenciário com atendimento humanizado e expertise técnica
+                </p>
+                <div class="hero-buttons hero-animation">
+                    <a href="#contatos" class="btn-primary bounce-on-hover">
+                        <i class="fas fa-comments mr-2"></i>
+                        Entre em Contato
+                    </a>
+                    <a href="#servicos" class="btn-secondary bounce-on-hover">
+                        <i class="fas fa-briefcase mr-2"></i>
+                        Nossos Serviços
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="section-padding bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-subtitle">Especialização e excelência em duas áreas fundamentais do direito</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Direito Familiar -->
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="service-title">Direito Familiar</h3>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Inventários e Partilhas</li>
+                        <li><i class="fas fa-check"></i> Separações e Divórcios</li>
+                        <li><i class="fas fa-check"></i> Pensão Alimentícia</li>
+                        <li><i class="fas fa-check"></i> Guarda de Menores</li>
+                        <li><i class="fas fa-check"></i> União Estável</li>
+                        <li><i class="fas fa-check"></i> Adoção</li>
+                    </ul>
+                </div>
+                
+                <!-- Direito Previdenciário -->
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="service-title">Direito Previdenciário</h3>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Aposentadorias</li>
+                        <li><i class="fas fa-check"></i> Revisões de Benefícios</li>
+                        <li><i class="fas fa-check"></i> Auxílio-Doença</li>
+                        <li><i class="fas fa-check"></i> Auxílio-Acidente</li>
+                        <li><i class="fas fa-check"></i> Pensão por Morte</li>
+                        <li><i class="fas fa-check"></i> BPC/LOAS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section id="quem-somos" class="section-padding bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="section-title">Quem Somos</h2>
+                <p class="section-subtitle">Conheça as profissionais por trás do M&J Advocacia</p>
+            </div>
+            
+            <!-- Advogadas -->
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="lawyer-profile slide-in-left">
+                    <div class="lawyer-photo">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23A67B5B'/%3E%3Ctext x='50%25' y='50%25' font-size='20' fill='white' text-anchor='middle' dy='.3em'%3EAmanda Machado%3C/text%3E%3C/svg%3E" alt="Amanda Machado" class="lawyer-img">
+                    </div>
+                    <h3 class="lawyer-name">Amanda Machado</h3>
+                    <p class="lawyer-title">Sócia Fundadora</p>
+                    <p class="lawyer-description">
+                        Especialista em Direito Familiar com mais de 10 anos de experiência. Reconhecida pela abordagem humanizada e resultados efetivos em casos complexos.
+                    </p>
+                </div>
+                
+                <div class="lawyer-profile slide-in-right">
+                    <div class="lawyer-photo">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23A67B5B'/%3E%3Ctext x='50%25' y='50%25' font-size='20' fill='white' text-anchor='middle' dy='.3em'%3EJéssica Juste%3C/text%3E%3C/svg%3E" alt="Jéssica Juste" class="lawyer-img">
+                    </div>
+                    <h3 class="lawyer-name">Jéssica Juste</h3>
+                    <p class="lawyer-title">Sócia Fundadora</p>
+                    <p class="lawyer-description">
+                        Expert em Direito Previdenciário com ampla experiência em benefícios e revisões. Comprometida em garantir os direitos previdenciários dos clientes.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Valores -->
+            <div class="values-section">
+                <h3 class="values-title fade-in-up">Nossos Valores</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="value-item valores-item">
+                        <div class="value-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4 class="value-title">Humanização</h4>
+                        <p class="value-description">Atendimento personalizado com foco na pessoa, não apenas no processo.</p>
+                    </div>
+                    
+                    <div class="value-item valores-item">
+                        <div class="value-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h4 class="value-title">Ética</h4>
+                        <p class="value-description">Transparência e honestidade em todas as nossas relações profissionais.</p>
+                    </div>
+                    
+                    <div class="value-item valores-item">
+                        <div class="value-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4 class="value-title">Excelência</h4>
+                        <p class="value-description">Busca constante pelos melhores resultados e aprimoramento técnico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatos -->
+    <section id="contatos" class="section-padding bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Estamos prontos para ajudar você com suas questões jurídicas</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Formulário -->
+                <div class="contact-form-container slide-in-left">
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nome Completo *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-mail *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Telefone</label>
+                            <input type="tel" id="phone" name="phone" class="form-input">
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Assunto *</label>
+                            <select id="subject" name="subject" class="form-input" required>
+                                <option value="">Selecione o assunto</option>
+                                <option value="direito-familiar">Direito Familiar</option>
+                                <option value="direito-previdenciario">Direito Previdenciário</option>
+                                <option value="consulta-geral">Consulta Geral</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                            <span class="error-message" id="subject-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensagem *</label>
+                            <textarea id="message" name="message" rows="5" class="form-input" required></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary w-full bounce-on-hover" id="submit-btn">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Informações de Contato -->
+                <div class="contact-info slide-in-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/5514999999999" target="_blank" rel="noopener noreferrer">
+                                (14) 99999-9999
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>E-mail</h4>
+                            <a href="mailto:contato@mjadvocacia.com.br">
+                                contato@mjadvocacia.com.br
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefone</h4>
+                            <a href="tel:+551433334444">
+                                (14) 3333-4444
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Redes Sociais -->
+                    <div class="social-links">
+                        <h4 class="social-title">Siga-nos</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização -->
+    <section id="localizacao" class="section-padding bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="section-title">Nossa Localização</h2>
+                <p class="section-subtitle">Encontre-nos no coração de Macedônia - SP</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Informações -->
+                <div class="location-info slide-in-left">
+                    <div class="location-item">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua Principal, 123<br>Centro - Macedônia - SP<br>CEP: 17000-000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="location-item">
+                        <div class="location-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Segunda a Sexta: 08h às 18h<br>Sábado: 08h às 12h<br>Domingo: Fechado</p>
+                        </div>
+                    </div>
+                    
+                    <div class="location-item">
+                        <div class="location-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div>
+                            <h4>Atendimento</h4>
+                            <p>Consultas mediante agendamento<br>Plantão 24h para emergências</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mapa -->
+                <div class="map-container slide-in-right">
+                    <div id="map-loading" class="map-loading">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Carregando mapa...</p>
+                    </div>
+                    <iframe 
+                        id="google-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.123456789!2d-49.1234567!3d-22.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMacedônia%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                        class="google-map"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        onload="handleMapLoad()"
+                        onerror="handleMapError()">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Logo e Descrição -->
+                <div>
+                    <h3 class="footer-title">M&J Advocacia</h3>
+                    <p class="footer-text">
+                        Direito com propósito, advocacia com coração. Especialistas em Direito Familiar e Previdenciário.
+                    </p>
+                </div>
+                
+                <!-- Links Rápidos -->
+                <div>
+                    <h4 class="footer-subtitle">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#quem-somos">Quem Somos</a></li>
+                        <li><a href="#contatos">Contatos</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contato -->
+                <div>
+                    <h4 class="footer-subtitle">Contato</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> (14) 3333-4444</p>
+                        <p><i class="fas fa-envelope"></i> contato@mjadvocacia.com.br</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Macedônia - SP</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 M&J Advocacia. Todos os direitos reservados.</p>
+                <p class="footer-dev">Desenvolvido por Laís Isabella Santos Sousa & Paulo Celso dos Santos Júnior</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
