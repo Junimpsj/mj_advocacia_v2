@@ -15,9 +15,9 @@
 
 // Configuração do EmailJS (IMPORTANTE: Substitua pelas suas credenciais reais)
 const EMAIL_CONFIG = {
-    serviceId: 'service_4m3tslj',     // Substitua pelo seu Service ID
-    templateId: 'template_u8zl45d',   // Substitua pelo seu Template ID
-    publicKey: 'OvjfNTNHJztycAtGC'      // Substitua pela sua Public Key
+    serviceId: 'service_alkwkwb',     // Substitua pelo seu Service ID
+    templateId: 'template_ujyn9t9',   // Substitua pelo seu Template ID
+    publicKey: 'ZQvl-ocLcCIgPo-nR'      // Substitua pela sua Public Key
 };
 
 // Configurações de validação
@@ -283,7 +283,7 @@ class NavigationManager {
         this.header = document.querySelector('.header-dynamic');
         this.mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         this.mobileMenu = document.querySelector('.mobile-menu');
-        this.navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+        this.navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link, .scroll-link');
     }
 
     bindEvents() {
@@ -742,6 +742,7 @@ class ContactFormManager {
             nome: data.name,
             email: data.email,
             telefone: data.phone,
+            assunto: data.subject,
             mensagem: data.message,
             data: data.timestamp
         };

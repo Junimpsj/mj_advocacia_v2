@@ -10,7 +10,7 @@
   /* === PALETA DE CORES === */
   --color-primary: #A67B5B;        /* Marrom médio - Botões e títulos */
   --color-secondary: #7FA987;      /* Verde esmeralda - Realces e hovers */
-  --color-accent: #7FA987;         /* Verde esmeralda - Acentos */
+  --color-accent: #3D9970;         /* Verde com base escura - Acentos */
   --color-background: #F5F0E6;     /* Bege claro - Fundo predominante */
   --color-light: #FAFAFA;          /* Branco suave - Seções alternadas */
   --color-text-primary: #444444;   /* Cinza escuro - Textos principais */
@@ -127,7 +127,7 @@ body {
 .bg-background { background-color: var(--color-background); }
 .bg-light { background-color: var(--color-light); }
 .text-primary { color: var(--color-primary); }
-.text-accent { color: var(--color-accent); }
+.accent-color { color: var(--color-accent); }
 
 /* ===================================
    TIPOGRAFIA
@@ -466,11 +466,6 @@ body {
   height: 100%;
 }
 
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-xl);
-}
-
 .service-icon {
   width: 80px;
   height: 80px;
@@ -486,10 +481,6 @@ body {
 .service-icon i {
   font-size: var(--font-size-2xl);
   color: var(--color-white);
-}
-
-.service-card:hover .service-icon {
-  transform: scale(1.1) rotate(5deg);
 }
 
 .service-title {
@@ -590,11 +581,6 @@ body {
   transition: all var(--transition-normal);
 }
 
-.value-item:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-xl);
-}
-
 .value-icon {
   width: 70px;
   height: 70px;
@@ -610,10 +596,6 @@ body {
 .value-icon i {
   font-size: var(--font-size-xl);
   color: var(--color-white);
-}
-
-.value-item:hover .value-icon {
-  transform: scale(1.1) rotate(-5deg);
 }
 
 .value-title {
