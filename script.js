@@ -140,6 +140,7 @@ class AnimationManager {
     }
 
     init() {
+        if (window.innerWidth < 768) return;
         // Verificar se o usuário prefere movimento reduzido
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
             this.enableInstantAnimations();
