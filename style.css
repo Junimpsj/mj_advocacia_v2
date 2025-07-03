@@ -1502,6 +1502,12 @@ img[loading="lazy"].loaded {
   }
 }
 
+@media (hover: none) and (pointer: coarse) {
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
 /* ===================================
    FIM DO ARQUIVO CSS
    Desenvolvido para M&J Advocacia
